@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+</head>
+<style>
+    body {
+        font-family: "Microsoft YaHei", Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f3f3f3;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background: #fff;
+    }
+
+    input {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #ddd;
+        font-size: large;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background: #003399;
+        color: #fff;
+    }
+
+    button:hover {
+        background: #003399;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+        color: black;
+    }
+
+    a:hover {
+        color: #ff0d00;
+    }
+
+    h3 {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <form action="" method="post">
+        <h3>登录</h3>
+        <input type="text" name="username" placeholder="用户名" required>
+        <input type="password" name="password" placeholder="密码" required minlength="8">
+        <button type="submit"><a href="index.html">登录</a></button>
+        <a href="signup.html">去注册</a>
+    </form>
+
+</body>
+<script src="../style/Canvas_bgc.js"></script>
+</html>

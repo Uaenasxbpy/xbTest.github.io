@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+</head>
+<style>
+    body {
+        font-family: "Microsoft YaHei", Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f3f3f3;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background: #fff;
+    }
+
+    input {
+        margin-bottom: 12px;
+        padding: 12px;
+        border-radius: 15px;
+        border: 1px solid #ddd;
+        font-size: large;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background: #003399;
+        color: #fff;
+    }
+
+    button:hover {
+        background: #003399;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+        color: black;
+    }
+
+    a:hover {
+        color: #ff0d00;
+    }
+
+    h3,
+    h5 {
+        text-align: center;
+    }
+
+    .box {
+        margin-top: 15px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        vertical-align: text-bottom;
+        margin-right: 5px;
+        margin-left: 5px;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <form>
+        <h3>注册</h3>
+        <input type="text" name="username" placeholder="用户名" required>
+        <input type="password" name="password" placeholder="密码" required minlength="8">
+        <input type="password" name="confirm_password" placeholder="确认密码" required minlength="8">
+        <input type="email" name="email" placeholder="邮箱" required>
+        <div class="box">
+            <div>
+                <label>性别:</label>
+                <input type="radio" name="gender" value="male"><img src="../images/性别男.png" alt="">
+                <input type="radio" name="gender" value="female"><img src="../images/性别女.png" alt="">
+            </div>
+            <div>
+                <label>爱好:</label>
+                <input type="checkbox" name="hobby" value="reading"><img src="../images/阅读书本.png" alt="">
+                <input type="checkbox" name="hobby" value="movies"><img src="../images/看电影.png" alt="">
+                <input type="checkbox" name="hobby" value="music"><img src="../images/听音乐.png" alt="">
+                <input type="checkbox" name="hobby" value="play"><img src="../images/游戏_填充.png" alt="">
+            </div>
+
+            <label>地区:</label>
+            <select name="region">
+                <optgroup label="北京">
+                    <option value="champion">昌平区</option>
+                    <option value="dongcheng">东城区</option>
+                    <option value="xicheng">西城区</option>
+                </optgroup>
+                <option value="shanghai">上海</option>
+                <option value="guangzhou">广州</option>
+            </select></br>
+
+            <label>学校:</label>
+            <select name="country">
+                <optgroup label="北京邮电大学">
+                    <option value="shahe">沙河校区</option>
+                    <option value="haidian">海淀校区</option>
+                    <option value="hainan">海南校区</option>
+                </optgroup>
+
+                <option value="qinhua">清华大学</option>
+                <option value="beijing">北京大学</option>
+            </select>
+            </br>
+
+            <label for="birthdate">生日:</label>
+            <select name="birthdate_month" id="birthdate_month">
+                <option value="">月</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="birthdate_day" id="birthdate_day">
+                <option value="">日</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+        </div>
+        </br>
+        <button type="submit"><a href="index.html">注册</a></button>
+        <a href="login.html" class="a_singup">去登录</a>
+    </form>
+</body>
+<script src="../style/Canvas_bgc.js"></script>
+
+</html>

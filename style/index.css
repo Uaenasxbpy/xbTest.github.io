@@ -1,0 +1,275 @@
+@media screen and (max-width: 1000px) {
+    /* 当网页宽度小于1000px时，隐藏侧边栏 */
+    .video {
+        display: none;
+      }
+      .audio {
+        display: none;
+      }
+    .introduce {
+        display: none;
+    }
+    .notice {
+        display: none;
+    }
+}
+.introduce {
+    height: 260px;
+    width: 15%;
+    background-color: rgba(228, 228, 228, .6);
+    position: fixed;
+    left: 10px;
+    top: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.introduce img {
+    width: 20%;
+    height: 20%;
+    vertical-align: text-bottom;
+}
+
+.introduce li {
+    font-size: 16px;
+    /* font-family: "楷体","黑体"; */
+    display: flex;
+    align-items: center;
+    /* border: 1 solid black;
+    border-radius: 10px; */
+    margin-right: 60px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.notice {
+    height: 260px;
+    width: 15%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: fixed;
+    left: 10px;
+    top: 340px;
+    background-color: rgba(228, 228, 228, .6);
+
+
+}
+.notice h2{
+    text-align: center;
+    font-size: x-large;
+    letter-spacing:2px;  
+}
+.notice p{
+    font-family: "宋体";
+    text-align: left;
+    letter-spacing: 1.5px;
+    text-indent: 2em;
+    line-height: 20px;
+}
+
+.video {
+    height: 200px;
+    width: 15%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* border-radius: 10px; */
+    position: fixed;
+    right: 10px;
+    top: 20px;
+    background-color: rgba(228, 228, 228, .6);
+    text-align: center;
+    
+}
+.audio {
+    height: 60px;
+    width: 15%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* border-radius: 10px; */
+    position: fixed;
+    right: 10px;
+    top: 360px;
+    background-color: rgba(228, 228, 228, .6);
+    text-align: center;
+    
+}
+.audio audio {
+    width: 100%; /* 设置音频播放器的宽度 */
+    height: 60%; /* 设置音频播放器的高度 */
+}
+body {
+        margin: 0 auto;
+    font-family: 'Times New Roman', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    background-image: url(../images/1.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: #003399;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin: 0 10px;
+    font-family: "华文中宋","黑体";
+}
+
+.nav a {
+    color: #003399;
+    text-decoration: none
+}
+
+section {
+    margin-bottom: 30px;
+    /* padding: 20px; */
+    /* background-image: url(../images/1.png); */
+    background-size: contain;
+    font-weight: 1000;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2,
+h3 {
+    font-family: "华文中宋","黑体";
+    text-align: center;
+    margin-top: 0;
+}
+
+a {
+    display: inline-block;
+    margin-right: 10px;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+footer a{
+    color: #fff;
+}
+a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #003399;
+    color: #fff;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.coursetable {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #2c2c2c;
+    background-color: rgba(255, 255, 255, .6);
+    padding: 20px;
+    text-align: center;
+    font-family: "幼圆";
+
+}
+
+table {
+    background-image: url(../images/tbgc.png);
+    background-size: contain;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td,
+th {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: left;
+    width: 200px; /* 设置宽度 */
+    height: 25px; /* 设置高度 */
+    text-align: center; /* 表格内所有文本水平居中 */
+}
+
+li {
+    list-style: none;
+}
+
+.course {
+    font-family:黑体;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #2c2c2c;
+    background-color: rgba(255, 255, 255, .6);
+    padding: 20px;
+}
+
+
+.nav,
+.materials,
+.videos,
+.lab,
+.homework,
+.advice {
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 3px 3px 5px #2c2c2c;
+    background-color: rgba(228, 228, 228, .6);
+    color: #333;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.videos:hover,
+.lab:hover,
+.materials:hover,
+.homework:hover,
+.advice:hover {
+    box-shadow: 5px 5px 10px #2c2c2c;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 51, 153, .5);
+}
+
+/* .insert {
+    margin: 0, auto;
+} */
+
+
+
+iframe {
+    border: 1px solid black;
+    background-color: rgba(228, 228, 228, .6);
+    border-radius: 10px;
+}
+
+.box1 img {
+    /* width: 80px;
+    height: 80px; */
+    height: 5%;
+    width: 5%;
+}
+
+.course li {
+    margin-top: 10px;
+}
